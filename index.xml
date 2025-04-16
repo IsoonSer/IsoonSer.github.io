@@ -17,9 +17,38 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>rm -rf .git*
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># เอา config ไปวาง&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title/><link>https://isoonser.github.io/posts/_boilerplate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://isoonser.github.io/posts/_boilerplate/</guid><description>&lt;pre tabindex="0">&lt;code>---
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>รวมสิ่งที่น่าสนใจใน Youtube</title><link>https://isoonser.github.io/posts/interesting-youtube/</link><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><guid>https://isoonser.github.io/posts/interesting-youtube/</guid><description>&lt;h1 id="ชองรายการ-ทนาสนใจ">ช่อง/รายการ ที่น่าสนใจ&lt;/h1>
+&lt;h2 id="technology">Technology&lt;/h2>
+&lt;h3 id="cybersec">CyberSec&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/@ippsec">IppSec&lt;/a> เน้นเกี่ยวกับ CTF ใน HTB&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/@NetworkChuck">NetworkChuck&lt;/a> ทุกอย่างเลยเกี่ยวกับ IT (Content เขาน่าสนใจ)&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/@davidbombal">David Bombal&lt;/a> เกี่ยวกับ Hack แต่คลิปจะยาวหน่อย&lt;/li>
+&lt;/ul>
+&lt;h3 id="dev">Dev&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/@freecodecamp">freeCodeCamp.org&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/@mikelopster">mikelopster&lt;/a> เกี่ยวกับ WebDev, Algo&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/@borntodev">BorntoDev&lt;/a> คลิปไม่ยาวมาก หลากหลายๆ&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/@roitai-dev">รอยไถ พัฒนา&lt;/a> ส่วนมาก WebDev&lt;/li>
+&lt;/ul>
+&lt;h2 id="relax">Relax&lt;/h2>
+&lt;h3 id="ทผมชอบด">ที่ผมชอบดู&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/@chaisoro">CHAISORO&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title/><link>https://isoonser.github.io/posts/_boilerplate/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://isoonser.github.io/posts/_boilerplate/</guid><description>&lt;pre tabindex="0">&lt;code>---
 title: เผยแพร่ Blog ลงบน Website ด้วย Hugo
 date: 2025-04-15
+description: ลองอะไรใหม่ๆ สำหรับผม คนที่ไม่ถนัดในการทำ UI ให้เว็บ
+tags:
+ - tag1
+ - tag2
+type: post
+draft: true
+---
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>---
+title: เผยแพร่ Blog ลงบน Website ด้วย Hugo
+time: 2020-08-21T10:30:00
 description: ลองอะไรใหม่ๆ สำหรับผม คนที่ไม่ถนัดในการทำ UI ให้เว็บ
 tags:
  - tag1
