@@ -58,7 +58,172 @@ title = &#34;My New Hugo Site&#34;
     pre = &#34;&lt;span data-feather=&#39;github&#39;&gt;&lt;/span&gt;&#34;
     post = &#34;&#34;
 </code></pre><p>ถัดมา ในโฟลเดอร์ Project ของเราให้รันคำสั่ง <code>hugo server</code> แล้วลองเข้าไปที่ <code>http:localhost:1313</code> ก็จะพบกับ Hugo Site แบบง่ายๆ ของเรา</p><p><img src=/images/Pasted%20image%2020250419205714.png alt="Image Description|400"></p><p>ส่วนวิธีการเพิ่มรูป Profile เพิ่ม Icon Link ต่างๆ สามารถศึกษาเพิ่มเติมได้จากตัวอย่างเว็บไซต์ ที่เค้าจะมีเขียน Configuration ตัวอย่างให้ ซึ่งในกรณีของ Theme ผม สามารถดูได้ที่ <a href=https://github.com/gokarna-theme/gokarna-hugo/tree/main/exampleSite>Github นี้</a>
-โดยถัดมาผมจะพามาดูขั้นตอนการเอา Website ที่สร้างจาก Hugo ขึ้นไปไว้บน Github Page เพื่อที่ว่าชาวโลกจะได้เข้ามาดูงานที่เราเผยแพร่ได้</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>brew install go
+เดี๋ยวผมจะพามาดูวิธีการเขียน Configuration File ที่ผมใช้ในการกำหนดค่าให้ Profile ที่ผมใช้นะครับ (ในไฟล์ <code>hugo.toml</code>)</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-toml data-lang=toml><span style=display:flex><span><span style=color:#a6e22e>baseURL</span> = <span style=color:#e6db74>&#34;https://isoonser.github.io/&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>defaultContentLanguage</span> = <span style=color:#e6db74>&#34;en&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>enableEmoji</span> = <span style=color:#66d9ef>true</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>languageCode</span> = <span style=color:#e6db74>&#34;en&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>theme</span> = <span style=color:#e6db74>&#34;gokarna&#34;</span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>title</span> = <span style=color:#e6db74>&#34;OzoneBlog&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[<span style=color:#a6e22e>params</span>]
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>avatarAltText</span> = <span style=color:#e6db74>&#34;avatar&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>avatarSize</span> = <span style=color:#e6db74>&#34;size-m&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>avatarURL</span> = <span style=color:#e6db74>&#34;/images/my-profile.png&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>description</span> = <span style=color:#e6db74>&#34;Passionate about IT, always seeking to learn more about life, and striving for peace.&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>footer</span> = <span style=color:#e6db74>&#34;Isoon Sermsri&#34;</span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>metaKeywords</span> = [<span style=color:#e6db74>&#34;blog&#34;</span>, <span style=color:#e6db74>&#34;gokarna&#34;</span>, <span style=color:#e6db74>&#34;hugo&#34;</span>]
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>showBackToTopButton</span> = <span style=color:#66d9ef>true</span> <span style=color:#75715e># true or false for &#34;back to top&#34; button on posts and pages</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>socialIcons</span> = [
+</span></span><span style=display:flex><span>    {<span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;instagram&#34;</span>, <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;https://example.com&#34;</span>},
+</span></span><span style=display:flex><span>    {<span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;facebook&#34;</span>, <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;https://www.facebook.com/ozone.isoon&#34;</span>},
+</span></span><span style=display:flex><span>    {<span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;email&#34;</span>, <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;mailto:example@example.com&#34;</span>}
+</span></span><span style=display:flex><span>  ]
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>[<span style=color:#a6e22e>menu</span>]
+</span></span><span style=display:flex><span>  [[<span style=color:#a6e22e>menu</span>.<span style=color:#a6e22e>main</span>]]
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;Home&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>pre</span> = <span style=color:#e6db74>&#34;&lt;span data-feather=&#39;home&#39;&gt;&lt;/span&gt;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;/&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  [[<span style=color:#a6e22e>menu</span>.<span style=color:#a6e22e>main</span>]]
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;Posts&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>pre</span> = <span style=color:#e6db74>&#34;&lt;span data-feather=&#39;book&#39;&gt;&lt;/span&gt;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;/posts/&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>2</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  [[<span style=color:#a6e22e>menu</span>.<span style=color:#a6e22e>main</span>]]
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>name</span> = <span style=color:#e6db74>&#34;Tags&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>pre</span> = <span style=color:#e6db74>&#34;&lt;span data-feather=&#39;tag&#39;&gt;&lt;/span&gt;&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>url</span> = <span style=color:#e6db74>&#34;/tags/&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>weight</span> = <span style=color:#ae81ff>4</span>
+</span></span></code></pre></div><p>สำหรับการเอารูปไปวางเพื่อใช้ใน Project ของเรา ให้เอาไปวางไว้ที่ <code>static/images</code> ในกรณีของผมก็ให้ตั้งค่า path ของรูป ไปชี้ที่รูปของเรา ที่เราไปวางเอาไว้ ดังนี้ <code>avatarURL = "/images/my-profile.png"</code> (ตั้งค่าบนไฟล์ <code>hugo.toml</code>)</p><p>![[Pasted image 20250419211202.png|400]]</p><p>ตัว hugo ก็จะอัพเดต Content ให้เราใหม่ ให้เราลองไปดูที่ <code>localhost:1313</code> อีกรอบ ก็จะพบว่าหน้า Profile ของเรา ได้เปลี่ยนไปแล้ว</p><p>![[Pasted image 20250419211353.png|400]]</p><p>แต่เมื่อลองกดบนแถบด้านบนไปที่ Posts เข้าไป ก็จะพบหน้าต่างนี้ เนื่องจากว่าเรายังไม่ทำการเพิ่ม Post ไปบนเว็บไซต์ของเรา</p><p>![[Pasted image 20250419211507.png|400]]</p><p>ต่อไป ผมจะมาลองพาทำการเพิ่ม Post ไปที่เว็บไซต์ของเรา โดยในการสร้าง Post บน Hugo นั้น ต้องเขียนโดยใช้ format เป็น markdown โดยให้เอา Content ในนี้ ไปเพิ่มที่ไฟล์ <code>content/posts/test.md</code></p><pre tabindex=0><code>&gt; ---
+&gt; title: &#34;Markdown Syntax Guide&#34;
+&gt; date: 2019-06-19
+&gt; description: &#34;Sample article showcasing basic Markdown syntax and formatting for HTML elements.&#34;
+&gt; tags: [&#34;markdown&#34;, &#34;css&#34;, &#34;html&#34;]
+&gt; type: post
+&gt; weight: 20
+&gt; showTableOfContents: true
+&gt; ---
+&gt; 
+&gt; This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+&gt; 
+&gt; # Headings
+&gt; 
+&gt; The following HTML `&lt;h1&gt;`—`&lt;h6&gt;` elements represent six levels of section headings. `&lt;h1&gt;` is the highest section level while `&lt;h6&gt;` is the lowest.
+&gt; 
+&gt; # H1
+&gt; ## H2
+&gt; ### H3
+&gt; #### H4
+&gt; ##### H5
+&gt; ###### H6
+&gt; 
+&gt; ## Paragraph
+&gt; 
+&gt; Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+&gt; 
+&gt; Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+&gt; 
+&gt; ## Blockquotes
+&gt; 
+&gt; The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+&gt; 
+&gt; ### Blockquote without attribution
+&gt; 
+&gt; &gt; Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&gt; &gt; **Note** that you can use *Markdown syntax* within a blockquote.
+&gt; 
+&gt; ### Blockquote with attribution
+&gt; 
+&gt; &gt; Don&#39;t communicate by sharing memory, share memory by communicating.
+&gt; &gt; — Rob Pike[^1]
+&gt; 
+&gt; [^1]: The above quote is excerpted from Rob Pike&#39;s [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
+&gt; 
+&gt; ## Tables
+&gt; 
+&gt; Tables aren&#39;t part of the core Markdown spec, but Hugo supports them out-of-the-box.
+&gt; 
+&gt;   Name | Age
+&gt; --------|------
+&gt;     Bob | 27
+&gt;   Alice | 23
+&gt; 
+&gt; ### Inline Markdown within tables
+&gt; 
+&gt; | Italics   | Bold     | Code   |
+&gt; | --------  | -------- | ------ |
+&gt; | *italics* | **bold** | `code` |
+&gt; 
+&gt; ## Code Blocks
+&gt; 
+&gt; ### Code block with backticks
+&gt; 
+&gt; ```html
+&gt; &lt;!doctype html&gt;
+&gt; &lt;html lang=&#34;en&#34;&gt;
+&gt; &lt;head&gt;
+&gt;   &lt;meta charset=&#34;utf-8&#34;&gt;
+&gt;   &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&gt; &lt;/head&gt;
+&gt; &lt;body&gt;
+&gt;   &lt;p&gt;Test&lt;/p&gt;
+&gt; &lt;/body&gt;
+&gt; &lt;/html&gt;
+&gt; ```
+&gt; 
+&gt; ### Code block indented with four spaces
+&gt; 
+&gt;     &lt;!doctype html&gt;
+&gt;     &lt;html lang=&#34;en&#34;&gt;
+&gt;     &lt;head&gt;
+&gt;       &lt;meta charset=&#34;utf-8&#34;&gt;
+&gt;       &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&gt;     &lt;/head&gt;
+&gt;     &lt;body&gt;
+&gt;       &lt;p&gt;Test&lt;/p&gt;
+&gt;     &lt;/body&gt;
+&gt;     &lt;/html&gt;
+&gt; 
+&gt; ### Code block with Hugo&#39;s internal highlight shortcode
+&gt; 
+&gt; <div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&gt; <span style=color:#75715e>&lt;!doctype html&gt;</span>
+</span></span><span style=display:flex><span>&gt; &lt;<span style=color:#f92672>html</span> <span style=color:#a6e22e>lang</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;en&#34;</span>&gt;
+</span></span><span style=display:flex><span>&gt; &lt;<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>&gt;   &lt;<span style=color:#f92672>meta</span> <span style=color:#a6e22e>charset</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;utf-8&#34;</span>&gt;
+</span></span><span style=display:flex><span>&gt;   &lt;<span style=color:#f92672>title</span>&gt;Example HTML5 Document&lt;/<span style=color:#f92672>title</span>&gt;
+</span></span><span style=display:flex><span>&gt; &lt;/<span style=color:#f92672>head</span>&gt;
+</span></span><span style=display:flex><span>&gt; &lt;<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&gt;   &lt;<span style=color:#f92672>p</span>&gt;Test&lt;/<span style=color:#f92672>p</span>&gt;
+</span></span><span style=display:flex><span>&gt; &lt;/<span style=color:#f92672>body</span>&gt;
+</span></span><span style=display:flex><span>&gt; &lt;/<span style=color:#f92672>html</span>&gt;
+</span></span><span style=display:flex><span>&gt; </span></span></code></pre></div>>
+> ## List Types
+>
+> ### Ordered List
+>
+> 1. First item
+> 2. Second item
+> 3. Third item
+>
+> ### Unordered List
+>
+> * List item
+> * Another item
+> * And another item
+>
+> ### Nested list
+>
+> * Fruit
+> * Apple
+> * Orange
+> * Banana
+> * Dairy
+> * Milk
+> * Cheese</code></pre><p>โดยถัดมาผมจะพามาดูขั้นตอนการเอา Website ที่สร้างจาก Hugo ขึ้นไปไว้บน Github Page เพื่อที่ว่าชาวโลกจะได้เข้ามาดูงานที่เราเผยแพร่ได้</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>brew install go
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>hugo version
 </span></span><span style=display:flex><span>
