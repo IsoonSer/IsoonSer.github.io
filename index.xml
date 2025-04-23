@@ -26,6 +26,10 @@
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/@chaisoro">CHAISORO&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://www.youtube.com/@Jdumofficial">Jdumofficial&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="สาระนดนง">สาระนิดนึง&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://youtube.com/playlist?list=PLUaBTRNM7hIXQqdAlAkurPsqZhe1LtQGL&amp;amp;si=ssPmsIv3XIVaLugr">Human-ศาสตร์&lt;/a> พอดแคสต์ที่จะทำให้คุณรู้จัก ‘ตัวคุณ’ มากขึ้น&lt;/li>
 &lt;/ul></description></item><item><title>เผยแพร่ Blog ลงบน Website ด้วย Hugo</title><link>https://isoonser.github.io/posts/publish-blog-hugo/</link><pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate><guid>https://isoonser.github.io/posts/publish-blog-hugo/</guid><description>&lt;p>        เนื่องจากว่าผมอยากจะมีพื้นที่ที่เอาไว้สำหรับบอกเล่า แบ่งปันเรื่องราว แบ่งปันประสบการณ์มานานแล้ว แต่ก็เนื่องจากในชีวิตมีอะไรต้องทำเยอะเกิน บวกกับการผัดวันประกันพรุ่งของตัวเอง ก็เลยไม่ได้มีโอกาสได้ทำสักที มาถึงวันนี้ ผมเรียนจบ ป.ตรี แล้วครับ เย่ &amp;hellip;ก็เลยเป็นโอกาสอันดีที่จะได้เริ่มต้นลองอะไรใหม่ๆ ในช่วงเวลานี้&lt;/p>
 &lt;p>        อะ เข้าเรื่องกันเลยดีกว่า ก็เนื่องจากว่าผมค่อนข้างที่จะไม่ enjoy กับการออกแบบ Figma ในการทำ UI ให้ Web รวมถึงไม่ค่อยชอบการเขียน CSS ผมก็เลยพยายามที่จะหาหนทางมีเว็บให้ตัวเอง แบบที่ไม่ต้องยุ่งกับสิ่งพวกนี้ โดยก่อนหน้านี้ ประมาณปีที่แล้ว ผมก็ได้ไปเห็น Web Blog ที่ชื่อว่า &lt;a href="https://suksit.com/">suksit dot com&lt;/a> แล้วผมก็ได้ลองอ่านงานเขียนของพี่เค้าหลายอันพอสมควร แต่ก็ไม่ได้เอะใจอะไร จนกระทั่งมาวันหนึ่ง ก็เหลือบไปเห็นคำว่า &lt;strong>Powered by Hugo&lt;/strong> บนหน้าแรกของเว็บพี่เค้า&lt;/p>
 &lt;p>&lt;img src="https://isoonser.github.io/images/Pasted%20image%2020250416213901.png" alt="Image Description|400">&lt;/p>
